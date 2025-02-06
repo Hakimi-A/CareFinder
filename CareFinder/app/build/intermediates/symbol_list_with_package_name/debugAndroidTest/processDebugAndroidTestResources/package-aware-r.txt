@@ -1,3 +1,0 @@
-com.example.carefinder.test
-style WhiteBackgroundDialogTheme
-style WhiteBackgroundTheme

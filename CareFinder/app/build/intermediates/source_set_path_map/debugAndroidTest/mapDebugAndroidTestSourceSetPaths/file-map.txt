@@ -1,5 +1,0 @@
-com.example.carefinder.test.app-core-1.6.1-0 C:\Users\Victus\.gradle\caches\8.9\transforms\a6a30e907052650da4b0d39b0d32b33b\transformed\core-1.6.1\res
-com.example.carefinder.test.app-androidTest-1 C:\Users\Victus\AndroidStudioProjects\CareFinder\app\build\generated\res\resValues\androidTest\debug
-com.example.carefinder.test.app-mergeDebugAndroidTestResources-2 C:\Users\Victus\AndroidStudioProjects\CareFinder\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
-com.example.carefinder.test.app-mergeDebugAndroidTestResources-3 C:\Users\Victus\AndroidStudioProjects\CareFinder\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
-com.example.carefinder.test.app-debugAndroidTest-4 C:\Users\Victus\AndroidStudioProjects\CareFinder\app\build\intermediates\merged_res\debugAndroidTest\mergeDebugAndroidTestResources
