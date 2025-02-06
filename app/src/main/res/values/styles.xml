@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CustomToolbar" parent="Widget.AppCompat.Toolbar">
+        <item name="android:icon">@android:color/white</item> <!-- for back button -->
+        <item name="popupTheme">@android:color/white</item>
+    </style>
+</resources>
