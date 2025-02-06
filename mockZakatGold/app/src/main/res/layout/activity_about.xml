@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tbAbout"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewDeveloper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="6dp"
+        app:layout_constraintTop_toBottomOf="@id/tbAbout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Image Placeholder -->
+            <ImageView
+                android:id="@+id/imagePlaceholder"
+                android:layout_width="109dp"
+                android:layout_height="134dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_placeholder"
+                android:contentDescription="Developer Image"
+                android:scaleType="centerCrop"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Student ID -->
+            <TextView
+                android:id="@+id/txtStudentID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Student ID: 2022867926"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <!-- Name -->
+            <TextView
+                android:id="@+id/txtName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Student Name: Mohamad Haikal Hakimi Bin Mohamad Anuar"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <!-- Faculty -->
+            <TextView
+                android:id="@+id/txtFaculty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Faculty: College of Computing, Informatics and Mathematics"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <!-- Course -->
+            <TextView
+                android:id="@+id/txtCourse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Course: Bachelor of Information Technology"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <!-- Group -->
+            <TextView
+                android:id="@+id/txtGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="Group: D1CDCS2405B"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <!-- Clickable URL -->
+            <TextView
+                android:id="@+id/txtWebsiteURL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="Application URL: https://github.com/Hakimi-A/ICT602-Zakat2U"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="16sp"
+                android:autoLink="web"
+                android:linksClickable="true"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:textAlignment="center" />
+
+            <!-- Copyright -->
+            <TextView
+                android:id="@+id/txtCopyright"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="© 2024 Zakat2U. All Rights Reserved."
+                android:textColor="@android:color/darker_gray"
+                android:textSize="14sp"
+                android:layout_marginTop="16dp" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

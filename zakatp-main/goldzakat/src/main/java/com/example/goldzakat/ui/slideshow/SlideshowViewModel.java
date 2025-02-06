@@ -1,0 +1,36 @@
+package com.example.goldzakat.ui.slideshow;
+
+import androidx.lifecycle.LiveData;
+import androidx.lifecycle.MutableLiveData;
+import androidx.lifecycle.ViewModel;
+
+public class SlideshowViewModel extends ViewModel {
+    private final MutableLiveData<String> instructionTitle = new MutableLiveData<>();
+    private final MutableLiveData<String[]> instructions = new MutableLiveData<>();
+    private final MutableLiveData<String> mText = new MutableLiveData<>();
+
+    public SlideshowViewModel() {
+        // Initialize default values
+        instructionTitle.setValue("How to Calculate Zakat");
+        instructions.setValue(new String[]{
+                "Step 1: Enter the weight of your gold, its type (keep or wear), and the current gold value per gram.",
+                "Step 2: The application calculates the zakat threshold (uruf): 85g for keep and 200g for wear.",
+                "Step 3: Subtract the uruf from the gold weight to determine the gold payable weight.",
+                "Step 4: Multiply the gold payable weight by the gold value per gram to get the total payable value.",
+                "Step 5: Multiply the total payable value by 2.5% to calculate your Zakat."
+        });
+        mText.setValue("This is slideshow fragment");
+    }
+
+    public LiveData<String> getInstructionTitle() {
+        return instructionTitle;
+    }
+
+    public LiveData<String[]> getInstructions() {
+        return instructions;
+    }
+
+    public LiveData<String> getText() {
+        return mText;
+    }
+}
